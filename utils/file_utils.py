@@ -8,5 +8,5 @@ def download_file(file_id):
 
 def allowed_file(filename):
     # Check if the file extension is allowed
-    ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
+    ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'csv', 'xlsx', 'py', 'html', 'js', 'css', 'scss'}
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS

@@ -10,7 +10,7 @@ class Config:
 
     # Uploads configuration (replace with your desired upload directory)
     UPLOAD_FOLDER = 'uploads'
-    ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', '.csv', '.xlsx', '.py', '.html', '.js', '.css'}
+    ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'csv', 'xlsx', 'py', 'html', 'js', 'css', 'scss'}
 
     # Logging configuration
     LOG_FILE = 'app.log'
