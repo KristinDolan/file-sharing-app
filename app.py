@@ -5,18 +5,20 @@ from flask_migrate import Migrate
 
 app = Flask(__name__)
 app.config.from_object(Config)
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
+
 db = SQLAlchemy(app)
 
 # Import database models
 from models import User
 
-# Create the database tables
+# Create database tables
 with app.app_context():
     db.create_all()
 
 # Migrate functionality for db updates
 migrate = Migrate(app, db)
-
 
 # Routes
 @app.route('/')
